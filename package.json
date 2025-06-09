@@ -1,0 +1,132 @@
+{
+  "name": "input-panel-extension",
+  "displayName": "Input Panel Extension",
+  "description": "Opens a side panel with 10 inputs, 5 required.",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "inputPanel.show",
+        "title": "Show Input Panel"
+      },
+      {
+        "command": "inputPanel.fillField1",
+        "title": "Fill Field 1 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField2",
+        "title": "Fill Field 2 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField3",
+        "title": "Fill Field 3 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField4",
+        "title": "Fill Field 4 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField5",
+        "title": "Fill Field 5 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField6",
+        "title": "Fill Field 6 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField7",
+        "title": "Fill Field 7 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField8",
+        "title": "Fill Field 8 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField9",
+        "title": "Fill Field 9 From Selection"
+      },
+      {
+        "command": "inputPanel.fillField10",
+        "title": "Fill Field 10 From Selection"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "inputPanel.fillField1",
+        "key": "ctrl+alt+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField2",
+        "key": "ctrl+alt+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField3",
+        "key": "ctrl+alt+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField4",
+        "key": "ctrl+alt+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField5",
+        "key": "ctrl+alt+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField6",
+        "key": "ctrl+alt+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField7",
+        "key": "ctrl+alt+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField8",
+        "key": "ctrl+alt+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField9",
+        "key": "ctrl+alt+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "inputPanel.fillField10",
+        "key": "ctrl+alt+0",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.13.0",
+    "@types/vscode": "^1.88.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
